@@ -398,7 +398,7 @@
               <h3 class="card-title">${p.name}</h3>
               <div class="price-row">
                 <span class="price-main">${p.price.toLocaleString('en-US', {minimumFractionDigits: 2})} $VLC</span>
-                ${p.isOnSale && p.originalPrice ? `<span class="price-original">${p.originalPrice} $VLC</span>` : ''}
+                ${p.isOnSale && p.originalPrice ? `<span class="price-original">${p.originalPrice}$VLC</span>` : ''}
               </div>
             </div>
           </div>
@@ -424,7 +424,7 @@
           <h1 style="font-size:2.25rem; font-weight:700;">${p.name}</h1>
           <div class="price-row">
             <span class="price-main" style="font-size:2rem;">${p.price.toLocaleString('en-US', {minimumFractionDigits: 2})} $VLC</span>
-            ${p.isOnSale && p.originalPrice ? `<span class="price-original" style="font-size:1.2rem;">${p.originalPrice} $VLC</span>` : ''}
+            ${p.isOnSale && p.originalPrice ? `<span class="price-original" style="font-size:1.2rem;">${p.originalPrice}$VLC</span>` : ''}
           </div>
           <p class="desc-text">${p.description || 'No description available for this product.'}</p>
           <button id="buy-btn" onclick="executePurchase('${p.id}')">Purchase with VeloCoin</button>
@@ -547,7 +547,7 @@
             <h3 class="card-title">${p.name}</h3>
             <div class="price-row">
               <span class="price-main">${p.price.toLocaleString('en-US', {minimumFractionDigits: 2})} $VLC</span>
-              ${p.isOnSale && p.originalPrice ? `<span class="price-original">${p.originalPrice} $VLC</span>` : ''}
+              ${p.isOnSale && p.originalPrice ? `<span class="price-original">${p.originalPrice}$VLC</span>` : ''}
             </div>
           </div>
         </div>
